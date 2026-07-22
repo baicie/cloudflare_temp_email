@@ -18,6 +18,7 @@ import { getPasswords, getBooleanValue, getDomains, checkIsAdmin } from './utils
 import { checkAccessControl } from './ip_blacklist';
 
 const API_PATHS = [
+	"/health_check",
 	"/api/",
 	"/open_api/",
 	"/user_api/",

@@ -15,6 +15,7 @@
 
 ### Bug Fixes
 
+- fix: |Worker| Preserve the `/health_check` backend route when Worker static assets are enabled, preventing the SPA fallback from returning frontend HTML for health checks
 - fix: |Worker| Align junk-mail checking with authentication standards: treat SPF, DKIM, and DMARC `none` plus SPF/DKIM `neutral` as absent, and ignore unregistered results and unsupported method versions; `JUNK_MAIL_FORCE_PASS_LIST` still requires an explicit supported `pass`
 - fix: |Admin| When deleting an address from the admin panel, delete its mails, sender records, sendbox and auto-reply entries before removing the address row itself; previously the address row was deleted first, so the name-based subqueries matched nothing and the mails were left orphaned in the database
 - fix: |AI Extract| Strengthen the prompt to keep original link domains from the email, preventing small models from rewriting verification-link domains (issue #1072)
