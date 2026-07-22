@@ -395,6 +395,52 @@ export const MESSAGE_REGISTRY = {
       "zh": "用户名"
     }
   },
+  "components.BatchAddressResultModal": {
+    "address": {
+      "en": "Address",
+      "zh": "邮箱地址"
+    },
+    "copyCsv": {
+      "en": "Copy CSV",
+      "zh": "复制 CSV"
+    },
+    "copyFailed": {
+      "en": "Copy failed",
+      "zh": "复制失败"
+    },
+    "copySuccess": {
+      "en": "Copied",
+      "zh": "已复制"
+    },
+    "created": {
+      "en": "{count} created",
+      "zh": "成功 {count} 个"
+    },
+    "credential": {
+      "en": "Address JWT",
+      "zh": "Address JWT"
+    },
+    "downloadCsv": {
+      "en": "Download CSV",
+      "zh": "下载 CSV"
+    },
+    "failed": {
+      "en": "{count} failed",
+      "zh": "失败 {count} 个"
+    },
+    "failureDetails": {
+      "en": "Failure details",
+      "zh": "失败明细"
+    },
+    "securityTip": {
+      "en": "The exported file contains mailbox credentials. Store it securely.",
+      "zh": "导出文件包含邮箱凭证，请妥善保管。"
+    },
+    "title": {
+      "en": "Batch creation results",
+      "zh": "批量创建结果"
+    }
+  },
   "views.user.UserMailBox": {
     "addressQueryTip": {
       "en": "Leave blank to query all addresses",
@@ -1984,6 +2030,46 @@ export const MESSAGE_REGISTRY = {
       "en": "Address Password",
       "zh": "地址密码"
     },
+    "batchBaseName": {
+      "en": "Address name prefix",
+      "zh": "邮箱名称前缀"
+    },
+    "batchBaseNamePlaceholder": {
+      "en": "For example: batch",
+      "zh": "例如：batch"
+    },
+    "batchCount": {
+      "en": "Quantity",
+      "zh": "创建数量"
+    },
+    "batchMode": {
+      "en": "Batch",
+      "zh": "批量创建"
+    },
+    "batchPartialSuccess": {
+      "en": "Created {created}; {failed} failed",
+      "zh": "成功 {created} 个，失败 {failed} 个"
+    },
+    "batchPreview": {
+      "en": "Address range",
+      "zh": "地址范围"
+    },
+    "batchStartNumber": {
+      "en": "Starting number",
+      "zh": "起始序号"
+    },
+    "batchSuccess": {
+      "en": "Created {count} addresses",
+      "zh": "已创建 {count} 个邮箱"
+    },
+    "createBatch": {
+      "en": "Create addresses",
+      "zh": "批量创建邮箱"
+    },
+    "createMode": {
+      "en": "Creation mode",
+      "zh": "创建方式"
+    },
     "creatNewEmail": {
       "en": "Create New Email",
       "zh": "创建新邮箱"
@@ -2000,6 +2086,10 @@ export const MESSAGE_REGISTRY = {
       "en": "Please fill in all fields",
       "zh": "请填写完整信息"
     },
+    "invalidBatch": {
+      "en": "Enter a valid name prefix, starting number, quantity, and domain",
+      "zh": "请填写有效的名称前缀、起始序号、创建数量和域名"
+    },
     "linkWithAddressCredential": {
       "en": "Open to auto login email link",
       "zh": "打开即可自动登录邮箱的链接"
@@ -2007,6 +2097,10 @@ export const MESSAGE_REGISTRY = {
     "randomSubdomainTip": {
       "en": "When enabled, the created address will use a random subdomain. Recommended for receiving only. Requires a wildcard MX DNS record on the base domain — see the random subdomain docs.",
       "zh": "启用后，创建出来的地址会自动挂在随机子域名下，建议仅用于收件。需要在基础域名 DNS 中配置通配 MX 记录，详见随机子域名文档。"
+    },
+    "singleMode": {
+      "en": "Single",
+      "zh": "单个创建"
     },
     "successTip": {
       "en": "Success Created",
