@@ -10,6 +10,7 @@
 
 ### Features
 
+- feat: |Admin| Add single/batch modes to address creation. Batch mode accepts a name prefix, starting number, and up to 100 addresses; shows the generated range and progress; continues after individual failures; and supports copying or downloading CSV results containing Address JWTs
 - feat: |Frontend| Add a "Full-width mailbox list view" toggle in Appearance settings. When enabled, the mailbox shows a full-width list of subjects and body previews by default; clicking a mail expands it into the two-pane split view, clicking the same mail again returns to the list view; in multi-select mode, clicking a mail updates both its checked state and the right-side preview while disabling same-mail collapse, and the split width still follows the "Left list width in two-column mailbox view" setting. Defaults to off, preserving the original two-pane behavior
 - feat: |Frontend| Add "Body Preview Lines" in Appearance settings for the full-width mailbox list view, allowing runtime control over the body-preview clamp. It defaults to 2 lines, and 0 disables previews
 
