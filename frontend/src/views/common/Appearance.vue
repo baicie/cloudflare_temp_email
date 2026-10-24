@@ -12,7 +12,7 @@ const props = defineProps({
 
 const {
     mailboxSplitSize, mailListView, mailListPreviewLineClamp, useIframeShowMail, preferShowTextMail, configAutoRefreshInterval,
-    globalTabplacement, useSideMargin, useUTCDate, useSimpleIndex
+    globalTabplacement, useSideMargin, useUTCDate, useSimpleIndex, autoLoadRemoteImages
 } = useGlobalState()
 const isMobile = useIsMobile()
 
@@ -33,7 +33,7 @@ const { t } = useScopedI18n('views.common.Appearance')
             <n-form-item-row v-if="!isMobile" :label="t('mailListView')">
                 <n-switch v-model:value="mailListView" :round="false" />
             </n-form-item-row>
-            <n-form-item-row v-if="!isMobile" :label="t('mailListPreviewLineClamp')">
+            <n-form-item-row :label="t('mailListPreviewLineClamp')">
                 <n-slider v-model:value="mailListPreviewLineClamp" :min="0" :max="5" :step="1" :marks="{
                     0: t('off'),
                     1: '1',
@@ -59,6 +59,9 @@ const { t } = useScopedI18n('views.common.Appearance')
             </n-form-item-row>
             <n-form-item-row :label="t('useUTCDate')">
                 <n-switch v-model:value="useUTCDate" :round="false" />
+            </n-form-item-row>
+            <n-form-item-row :label="t('autoLoadRemoteImages')">
+                <n-switch v-model:value="autoLoadRemoteImages" :round="false" />
             </n-form-item-row>
             <n-form-item-row v-if="!isMobile" :label="t('useSideMargin')">
                 <n-switch v-model:value="useSideMargin" :round="false" />
